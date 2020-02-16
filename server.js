@@ -26,9 +26,6 @@ app.use(router)
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/public/index.html"))
 })
-// .catch(err => {
-//   res.status(400).json(err);
-// });
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
